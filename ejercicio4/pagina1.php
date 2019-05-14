@@ -10,4 +10,22 @@
  * archivo "pagina1.php" para poder ver todas las quejas registradas.
  *
  */
+include('php/conexion.php');
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quejas</title>
+</head>
+<body>
+	<h1>Formulario de quejas</h1>
+	<a href="pagina3.php">Ver quejas</a><br><br>
+	<form action="pagina2.php" method="POST">
+		<input type="text" name="username" placeholder="Nombre de usuario"><br><br>
+		<textarea name="queja" rows="10" cols="40"></textarea>
+		<br><br>
+		<button>Enviar queja</button>
+	</form>
+</body>
+</html>
